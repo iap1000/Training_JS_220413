@@ -1,0 +1,204 @@
+header {
+    height: 100px;
+    padding: 20px 20px 20px 20px;
+    border-radius: 15px;
+    background-color: burlywood;
+    align-items: center;
+}
+#ulheader{
+    align-items: center;
+    padding: 1px;
+}
+#red_texto {
+    font-size:2vw;
+}
+#menu ul li {
+    display: inline-block;
+    padding-right: 2%;
+}
+.button {
+    background-color: #4CAF50;
+    border: solid;
+    border-radius: 10px;
+    color: white;
+    padding: 5px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 2vw;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+.disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+#left_col{
+  background-color: aquamarine;
+}
+#right_col{
+  background-color: rgb(197, 149, 76);
+}
+/* EXE1 */
+/* Fonts */
+@import url("https://fonts.googleapis.com/css?family=Open+Sans|Roboto:400,700&display=swap");
+
+/* Variables */
+:root {
+  --ff-primary: "Roboto", sans-serif;
+  --ff-secondary: "Open Sans", sans-serif;
+  --transition: all 0.3s linear;
+  --spacing: 0.25rem;
+  --radius: 0.5rem;
+  --light-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  --dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  --max-width: 1170px;
+  --fixed-width: 620px;
+}
+/* Global Styles */
+*,::after,::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: var(--ff-secondary);
+  background: var(--clr-grey-10);
+  color: var(--clr-grey-1);
+  line-height: 1.5;
+  font-size: 0.875rem;
+}
+ul {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+}
+.img-container {
+  width: 100%;
+  display: block;
+}
+p {
+  margin-bottom: 1.25rem;
+  color: var(--clr-grey-5);
+}
+@media screen and (min-width: 800px) {
+  h1 {  font-size: 4rem;    }
+  h2 {  font-size: 2.5rem;  }
+  h3 {  font-size: 1.75rem; }
+  h4 {  font-size: 1rem;    }
+  body {  font-size: 1rem;    }
+  h1,h2,h3,h4 { line-height: 1; }
+}
+/*  global classes */
+.btn {
+  font-family: var(--ff-primary);
+  text-transform: uppercase;
+  background: transparent;
+  color: var(--clr-black);
+  padding: 0.375rem 0.75rem;
+  letter-spacing: var(--spacing);
+  display: inline-block;
+  font-weight: 700;
+  transition: var(--transition);
+  font-size: 0.875rem;
+  border: 2px solid var(--clr-black);
+  cursor: pointer;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+  border-radius: var(--radius);
+  margin: 2rem;
+}
+.btn:hover {
+  color: var(--clr-white);
+  background: var(--clr-black);
+}
+.btn-hero {
+  font-size: 1rem;
+  padding: 0.75rem 1.25rem;
+}
+/* section */
+.section {
+  padding: 5rem 0;
+}
+.section-center {
+  width: 90vw;
+  margin: 0 auto;
+  max-width: 1170px;
+}
+/* Container */
+main {
+  min-height: calc(100vh - 3rem);
+  display: grid;
+  place-items: center;
+  background-color: azure;
+}
+.container {
+  text-align: center;
+}
+.title {
+  color:rgba(18, 12, 102, 0.699);
+  text-align: center;
+  margin-bottom: 4rem;
+}
+#author {
+  letter-spacing: var(--spacing);
+  text-transform: capitalize;
+  line-height: 1.25;
+  margin-bottom: 0.75rem;
+  font-family: var(--ff-primary);
+}
+#job {
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
+  color: hsl(205, 78%, 60%);
+  font-size: 0.85rem;
+}
+.review {
+  background: white;
+  padding: 1.5rem 2rem;
+  border-radius: var(--radius);
+  transition: var(--transition);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+#info {
+  margin-bottom: 0.75rem;
+  font-family: sans-serif;
+  margin: 0px 0px 12px;
+  color: blue;
+}
+.underline {
+  background:  hsl(205, 78%, 60%);
+  height: 0.25rem;
+  width: 5rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+.prev-btn, .next-btn {
+  color: aquamarine;
+  font-size: 30px;
+  background: transparent;
+  border-color: transparent;
+  margin: 0.5rem 0.3rem;
+  transition: var(--transition);
+  cursor: pointer;
+}
+.prev-btn:hover, .next-btn:hover {
+  color: blue;
+}
+.random-btn {
+  margin-top: 0.5rem;
+  background: rgb(216, 216, 223);
+  color: rgb(8, 159, 197);
+  padding: 0.25rem 0.5rem;
+  text-transform: capitalize;
+  border-radius: var(--radius);
+  transition: var(--transition);
+  border-color: blue;
+  cursor: pointer;
+}
+.random-btn:hover {
+  background: hsl(205, 78%, 60%);
+  color:  hsl(205, 86%, 17%);
+}
+

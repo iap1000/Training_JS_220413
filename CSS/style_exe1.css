@@ -1,18 +1,9 @@
 header {
     height: 100px;
-    padding: 20px;
+    padding: 20px 20px 20px 20px;
     border-radius: 15px;
     background-color: burlywood;
     align-items: center;
-
-}
-@media screen and (max-width:900px) {
-    .reduzir{
-        max-width: 25vw;
-    }
-    header{
-        padding: 5px;
-    }
 }
 #ulheader{
     align-items: center;
@@ -24,7 +15,6 @@ header {
 #menu ul li {
     display: inline-block;
     padding-right: 2%;
-    margin-left: 10px;
 }
 .button {
     background-color: #4CAF50;
@@ -38,11 +28,16 @@ header {
     font-size: 2vw;
     margin: 4px 2px;
     cursor: pointer;
-
 }
 .disabled {
     opacity: 0.6;
     cursor: not-allowed;
+}
+#left_col{
+  background-color: aquamarine;
+}
+#right_col{
+  background-color: rgb(197, 149, 76);
 }
 /* EXE1 */
 /* Fonts */
@@ -92,9 +87,7 @@ header {
   --fixed-width: 620px;
 }
 /* Global Styles */
-*,
-::after,
-::before {
+*,::after,::before {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -122,27 +115,12 @@ p {
   color: var(--clr-grey-5);
 }
 @media screen and (min-width: 800px) {
-  h1 {
-    font-size: 4rem;
-  }
-  h2 {
-    font-size: 2.5rem;
-  }
-  h3 {
-    font-size: 1.75rem;
-  }
-  h4 {
-    font-size: 1rem;
-  }
-  body {
-    font-size: 1rem;
-  }
-  h1,
-  h2,
-  h3,
-  h4 {
-    line-height: 1;
-  }
+  h1 {  font-size: 4rem;    }
+  h2 {  font-size: 2.5rem;  }
+  h3 {  font-size: 1.75rem; }
+  h4 {  font-size: 1rem;    }
+  body {  font-size: 1rem;    }
+  h1,h2,h3,h4 { line-height: 1; }
 }
 /*  global classes */
 .btn {
@@ -160,6 +138,7 @@ p {
   cursor: pointer;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
   border-radius: var(--radius);
+  margin: 2rem;
 }
 .btn:hover {
   color: var(--clr-white);
@@ -173,7 +152,6 @@ p {
 .section {
   padding: 5rem 0;
 }
-
 .section-center {
   width: 90vw;
   margin: 0 auto;
@@ -187,7 +165,7 @@ p {
 /* Nav */
 nav {
     background: var(--clr-white);
-    height: 3rem;
+    height: 5rem;
     display: grid;
     align-items: center;
     box-shadow: var(--dark-shadow);

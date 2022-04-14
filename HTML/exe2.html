@@ -4,29 +4,39 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>...</title>
-    <link rel="stylesheet" href="/CSS/style.css">
+    <title>Counter</title>
+    <link rel="stylesheet" href="/Public/CSS/style_exe2.css">
 </head>
 <body>
     <header>
-        <div class="row">
-            <div id="menu">
-                <ul class="columns">
-                    <li>
-                        <h2>Exe2 - ...</h2>
-                    </li>
-                    <li>
-                        <a href="index.html" class="button">Index inicial, com todos exercícios</a>
-                    </li>
-                    <li>
-                        <a href="exe1.html" class="button">Anterior</a>
-                    </li>
-                    <li>
-                        <a href="exe3.html" class="button">Próximo</a>
-                    </li>
-                </ul>                
-            </div>
-        </div>        
+        <div id="menu">
+            <ul id="ulheader">
+                <li>
+                    <h2 id="red_texto">Exe2 - Counter</h2>
+                </li>
+                <li>
+                    <a href="index.html" class="button reduzir">Home</a>
+                </li>
+                <li>
+                    <a href="exe1.html" class="button">Anterior</a>
+                </li>
+                <li>
+                    <a href="exe3.html" class="button">Próximo</a>
+                </li>
+            </ul>
+        </div>
     </header>
+    <main>
+        <div class="container">
+            <h1>Counter</h1>
+           <span id="counter_text">0</span>
+            <ul class="nav-links">
+                <li><button class="btn" id="dec">DECREASE</button></li>
+                <li><button class="btn" id="reset">RESET</button></li>
+                <li><button class="btn" id="inc">INCREASE</button></li>
+            </ul>
+        </div>
+    </main>
 </body>
+<script src="/Public/JS/JS_exe2.js"></script>
 </html>

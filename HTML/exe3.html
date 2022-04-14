@@ -4,29 +4,51 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>...</title>
-    <link rel="stylesheet" href="/CSS/style.css">
+    <title>Reviews/Quotes</title>
+    <link rel="stylesheet" href="/Public/CSS/style_exe3.css">
 </head>
 <body>
     <header>
-        <div class="row">
-            <div id="menu">
-                <ul class="columns">
-                    <li>
-                        <h2>Exe3 - ...</h2>
-                    </li>
-                    <li>
-                        <a href="index.html" class="button">Index inicial, com todos exercícios</a>
-                    </li>
-                    <li>
-                        <a href="exe2.html" class="button">Anterior</a>
-                    </li>
-                    <li>
-                        <a href="exe4.html" class="button">Próximo</a>
-                    </li>
-                </ul>                
-            </div>
-        </div>        
+        <div id="menu">
+            <ul id="ulheader">
+                <li>
+                    <h2 id="red_texto">Exe3 - Reviews/Quotes</h2>
+                </li>
+                <li>
+                    <a href="index.html" class="button reduzir">Home</a>
+                </li>
+                <li>
+                    <a href="exe2.html" class="button">Anterior</a>
+                </li>
+                <li>
+                    <a href="exe4.html" class="button">Próximo</a>
+                </li>
+            </ul>
+        </div>
     </header>
+    <main>
+        <section class="container">
+            <div class="title">
+                <h2>Our Reviews</h2>
+                <div class="underline"></div>
+            </div>
+            <article class="review">
+                <div class="img-container">
+                    <img src="/Public/Images/amarelas.jpg" id="my-img" alt="Flores amarelas">
+                </div>
+                <h4 id="author">Flores amarelas</h4>
+                <p id="job">cheirosas</p>
+                <p id="info">Estas floras encontram-se no muinicípio de Imbituba, 
+                    Santa Catarina, no sul do Brasil</p>
+                <div class="button-container">
+                    <button class="prev-btn"> < </button>
+                    <button class="next-btn"> > </button>
+                </div>
+                <button class="random-btn">Random picture</button>
+
+            </article>
+        </section>
+    </main>
 </body>
+<script src="/Public/JS/JS_exe3.js"></script>
 </html>
